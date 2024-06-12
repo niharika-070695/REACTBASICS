@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .card {
+        box-shadow: 0 0 10px green;
+        padding: 10px;
+        width: 270px;
+        height: 400 px;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      let card = (
+        <div class="card">
+          <img
+            src="https://wallpapercave.com/wp/1B76Pm2.jpg"
+            width="100%"
+            height="250"
+          />
+          <h3>Rabbit</h3>
+          <p>I am Rabbit and I belong to family Leporidae.</p>
+          <button>Animal Details</button>
+        </div>
+      );
+      ReactDOM.render(card, document.getElementById("root"));
+    </script>
+  </body>
+</html>
