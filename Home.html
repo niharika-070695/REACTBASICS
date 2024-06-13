@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Home.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function CreateCard(props) {
+        return (
+          <div class="card">
+            <img src={props.imageUrl} width="100%" height="250" />
+            <h3>{props.title}</h3>
+            <p>I am Rabbit and I belong to family Leporidae.</p>
+            <button>Animal Details</button>
+          </div>
+        );
+      }
+      function Header() {
+        return (
+          <div class="header flexContainer">
+            <h2>Header Component</h2>
+          </div>
+        );
+      }
+      function Main() {
+        return (
+          <div class="main cardContainer ">
+            <CreateCard
+              title="Rabbit 1"
+              imageUrl="https://wallpapercave.com/wp/1B76Pm2.jpg"
+            />
+            <CreateCard
+              title="Rabbit 2"
+              imageUrl="https://tse4.mm.bing.net/th?id=OIP.leKIPQCsm5skT6PjXMCWlAHaEo&pid=Api&P=0&h=180"
+            />
+            <CreateCard
+              title="Rabbit 3"
+              imageUrl="https://i2.wp.com/www.allthestufficareabout.com/wp-content/uploads/2019/03/cute-bunny-pictures-funny-bunny-images-bunny-pics-allthestufficareabout-3.jpg?w=1440&ssl=1"
+            />
+            <CreateCard
+              title="Rabbit 4"
+              imageUrl="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rabbit-breeds-american-white-1553635287.jpg?crop=0.976xw:0.651xh;0.0242xw,0.291xh&resize=480:*"
+            />
+          </div>
+        );
+      }
+      function Footer() {
+        return (
+          <div class="footer flexContainer">
+            <h2>Footer Component</h2>
+          </div>
+        );
+      }
+      function App() {
+        return (
+          <div>
+            <Header />
+            <Main />
+            <Footer />
+          </div>
+        );
+      }
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
