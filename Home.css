@@ -4,17 +4,35 @@ body,
 }
 .header {
   background-color: black;
-  height: 90px;
+  height: 80px;
   color: white;
+  display: flex;
+}
+.leftPanel {
+  width: 40%;
+}
+.rightPanel {
+  width: 60%;
+}
+.rightPanel a {
+  color: white;
+  text-decoration: none;
+  margin-right: 50px;
 }
 .main {
   background-color: lightgray;
   padding: 50px 20px;
 }
 .footer {
-  height: 150px;
-  background-color: darkred;
+  background-color: rgb(24, 18, 18);
   color: white;
+  padding: 50px;
+}
+.footer a {
+  color: orangered;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
 }
 .flexContainer {
   display: flex;
